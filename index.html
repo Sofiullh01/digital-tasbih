@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <div >
+            <h1 class="text-6xl text-center font-extrabold text-green-400 mt-20">Digital Tasbih</h1>
+        </div>
+        <section class="container grid grid-cols-1 md:grid-cols-2 justify-center items-center w-full mt-5 lg:mt-20 lg:grid-cols-3 gap-3 lg:gap-5 max-w-7xl">
+            <!-- sub han section -->
+            <div class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md py-10 ">
+                <h class="text-4xl font-medium text-gray-400">Subhan Allah</h3>
+                <p id="subDis" class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased my-3">0</p>
+                <div>
+                    <button id="subIncriment" class="select-none rounded-lg bg-violet-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Incriment</button>
+
+                    <button id="subDecncriment" class="select-none rounded-lg bg-green-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Decriment</button>
+                </div>
+                <!-- allah Akber  -->
+            </div>
+            <!-- allh akbar -->
+            <div class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md py-10">
+                <h3 class="text-4xl font-medium text-gray-400">Alhamdulilah</h3>
+                <p id="akbarDis" class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased my-3">0</p>
+                <div>
+                    <button id="akberIncriment" class="select-none rounded-lg bg-violet-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Incriment</button>
+
+                    <button id="akberDecncriment" class="select-none rounded-lg bg-green-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Decriment</button>
+                </div>
+                <!-- Alhamdulilah -->
+            </div>
+            <div class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md py-10">
+                <h3 class="text-4xl font-medium text-gray-400"> Allahuakber</h3>
+                <p id="allDis" class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased my-3">0</p>
+                <div>
+                    <button id="allIncriment" class="select-none rounded-lg bg-violet-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Incriment</button>
+
+                    <button id="allDecncriment" class="select-none rounded-lg bg-green-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Decriment</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resetContainer lg:mt-10 mt-5 flex justify-center">
+                <button id="resetBtn"
+                    class="select-none rounded-lg bg-red-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button" data-ripple-light="true">
+                    Reset All Tasbih
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="js/tasbeh.js"></script>
+</body>
+</html>
